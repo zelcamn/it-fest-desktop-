@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="count_bt">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -27,7 +27,7 @@
      <string>подсчитать стоимость</string>
     </property>
    </widget>
-   <widget class="QTableView" name="tableView">
+   <widget class="QTableView" name="mh_table">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -63,7 +63,7 @@
      <string>станок</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="bench_output_line">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -73,7 +73,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="mat_cost">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -83,7 +83,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="work_time_line">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -93,7 +93,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="mat_amount_line">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -155,7 +155,7 @@
      <string>кол-во используемого материала</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="litres_rbt">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -168,7 +168,7 @@
      <string>литры</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="kg_rbt">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -181,7 +181,7 @@
      <string>киллограммы</string>
     </property>
    </widget>
-   <widget class="QTableWidget" name="tableWidget">
+   <widget class="QTableWidget" name="opt_mat_table">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -269,7 +269,7 @@
      <string>итоговая стоимость</string>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber">
+   <widget class="QLCDNumber" name="Cost_LCD">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -292,7 +292,7 @@
      <string>добавить в список</string>
     </property>
    </widget>
-   <widget class="QTableView" name="tableView_2">
+   <widget class="QTableView" name="bench_list_table">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -302,7 +302,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="blt_del_bt">
     <property name="geometry">
      <rect>
       <x>310</x>
