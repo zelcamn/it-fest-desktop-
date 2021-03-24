@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QTableWidget
+from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem
 
 
 class ManHoursTable:
@@ -12,6 +12,9 @@ class ManHoursTable:
 
         self.table.setRowCount(1)
         self.table.setColumnCount(3)
+        self.table.setHorizontalHeaderItem(0, QTableWidgetItem("операция"))
+        self.table.setHorizontalHeaderItem(1, QTableWidgetItem("стоимость"))
+        self.table.setHorizontalHeaderItem(2, QTableWidgetItem("продолжительность"))
 
     def AddMaterial(self):
         print("AddOperationForPerson")

@@ -16,22 +16,28 @@ class Calculator:
         global ManHourTableRes, BenchTableRes, OptMatRes, tax
 
         try:
+            OptMatResult = 0
             for i in range(self.Opttable.rowCount()):
-                OptMatRes += float(self.Opttable.item(i, 1).text()) * float(self.Opttable.item(i, 2).text())
+                OptMatResult += float(self.Opttable.item(i, 1).text()) * float(self.Opttable.item(i, 2).text())
+            OptMatRes = OptMatResult
         except BaseException as er:
             print(er)
 
         try:
+            ManHourTableResult = 0
             for i in range(self.Manhtable.rowCount()):
-                ManHourTableRes += float(self.Manhtable.item(i, 1).text()) * float(self.Manhtable.item(i, 2).text())
+                ManHourTableResult += float(self.Manhtable.item(i, 1).text()) * float(self.Manhtable.item(i, 2).text())
+            ManHourTableRes = ManHourTableResult
         except BaseException as er:
             print(er)
 
         try:
+            BenchTableResult = 0
             for i in range(self.Benchtable.rowCount()):
-                BenchTableRes += float(self.Benchtable.item(i, 3).text()) * float(self.Benchtable.item(i, 4).text()) + \
+                BenchTableResult += float(self.Benchtable.item(i, 3).text()) * float(self.Benchtable.item(i, 4).text()) + \
                                  (float(self.Benchtable.item(i, 1).text()) * float(self.Benchtable.item(i, 2).text()) *
                                   tax)
+            BenchTableRes = BenchTableResult
         except BaseException as er:
             print(er)
 

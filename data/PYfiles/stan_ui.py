@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QTableWidget
+from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem
 
 
 class BenchOperationsTable:
@@ -12,6 +12,11 @@ class BenchOperationsTable:
 
         self.table.setRowCount(1)
         self.table.setColumnCount(5)
+        self.table.setHorizontalHeaderItem(0, QTableWidgetItem("операция"))
+        self.table.setHorizontalHeaderItem(1, QTableWidgetItem("мощность"))
+        self.table.setHorizontalHeaderItem(2, QTableWidgetItem("кол-во часов"))
+        self.table.setHorizontalHeaderItem(3, QTableWidgetItem("стоимость"))
+        self.table.setHorizontalHeaderItem(4, QTableWidgetItem("кол-во"))
 
     def AddMaterial(self):
         print("AddBenchOperation")

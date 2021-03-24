@@ -1,4 +1,5 @@
-from PyQt5.QtWidgets import QTableWidget
+from PyQt5.QtWidgets import QTableWidget, QTableWidgetItem
+
 
 class OptionalMaterialsTable:
     def __init__(self, objlist):
@@ -11,6 +12,9 @@ class OptionalMaterialsTable:
 
         self.table.setRowCount(1)
         self.table.setColumnCount(3)
+        self.table.setHorizontalHeaderItem(0, QTableWidgetItem("операция"))
+        self.table.setHorizontalHeaderItem(1, QTableWidgetItem("стоимость"))
+        self.table.setHorizontalHeaderItem(2, QTableWidgetItem("кол-во"))
 
     def AddMaterial(self):
         print("AddMaterial")
